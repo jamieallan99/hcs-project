@@ -1,19 +1,15 @@
-from io import StringIO
-from html.parser import HTMLParser
-
-class MLStripper(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.reset()
-        self.strict = False
-        self.convert_charrefs= True
-        self.text = StringIO()
-    def handle_data(self, d):
-        self.text.write(d)
-    def get_data(self):
-        return self.text.getvalue()
+from bs4 import BeautifulSoup
 
 def strip_tags(html):
-    s = MLStripper()
-    s.feed(html)
-    return s.get_data()
+    soup = BeautifulSoup(html, "html.parser") # create a new bs4 object from the html data loaded
+    for script in soup(["script", "style"]): # remove all javascript and stylesheet code
+        script.extract()
+    # get text
+    text = soup.get_text()
+    # break into lines and remove leading and trailing space on each
+    lines = text.splitlines()
+    # break multi-headlines into a line each
+    chunks = (phrase for line in lines for phrase in line.split("  "))
+    # drop blank lines
+    text = '\n'.join(chunk for chunk in chunks if chunk)
+    return text
