@@ -6,4 +6,4 @@ crawler.crawl(PolicyCrawler)
 
 with open('temp_file.txt', 'w', encoding="utf-8") as f:
     for o in crawler.output:
-        f.write(strip_tags(o) + "\n")
+        f.write('item-tag\n' + strip_tags(o) + "\n\n")
