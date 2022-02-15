@@ -2,7 +2,8 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 
 class PolicyCrawler(scrapy.Spider):
-    name = "quotes"
+    name = "policies"
+    maxdepth = 2
     start_urls = [ 'http://google.com', 'http://facebook.com']
 
     def __init__(self, **kwargs):
@@ -11,7 +12,25 @@ class PolicyCrawler(scrapy.Spider):
         self.output_callback = kwargs.get('args').get('callback')
 
     def parse(self, response):
+        depth = 0
+
+        if 'depth' in response.meta:
+            depth = response.meta['depth']
+
         for page in response.css('body'):
+            if depth < self.maxdepth:
+                a_selectors = response.xpath("//a")
+                for selector in a_selectors:
+                    # Extract the link text
+                    text = selector.xpath("text()").extract_first()
+                    # Extract the link href
+                    link = selector.xpath("@href").extract_first()
+                    # Create a new Request object
+                    request = response.follow(link, callback=self.parse)
+                    # Return it thanks to a generator
+                    request.meta['depth'] = depth + 1
+                    if str(link).count("policies"):
+                        yield request
             self.data.append(page.extract())
         # if you wanna extract more than whole body
         # for title in response.css('h2.entry-title'):
