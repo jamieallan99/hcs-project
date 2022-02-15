@@ -1,0 +1,261 @@
+This Cookie Policy explains how we use cookies and similar tracking methods (such as pixels, SDKs, JavaScript, device identifiers, etc., which we refer to as “trackers”) when you visit our site. “Our site” means our websites, emails, apps and other services that link to this Cookie Policy. For a complete list of our cookie policies covering all Times properties, visit this page.
+
+This policy explains what various tracking methods are, and why they are used. It also explains your right to control their use.
+
+We may change this Cookie Policy at any time. Check the “last revised” date at the top of this page to see when this Cookie Policy was last revised. Any change becomes effective when we post the revised Cookie Policy on or through our site.
+
+If you have any questions, please contact us by email at privacy@nytimes.com. You can also write to us: The New York Times Company, 620 Eighth Avenue, New York, N.Y. 10018, attn.: Privacy Counsel.
+
+Page Contents
+What Is a Tracker?
+What Trackers Do We Use?
+How Do I Manage Trackers?
+1.What Is a Tracker?
+We use a variety of tracker methods; six of the main types are explained below. This list is intended to include all categories that we use, although the categories may vary depending on the use of our site.
+
+A) Cookies
+
+A cookie is a small string of text that a website (or online service) stores on a user’s browser. It saves data on your browser about your visit to our site or other sites. It often includes a unique identifier (e.g., cookie #123).
+
+“First-party cookies” are cookies set by us (or on our behalf) on our site. “Third-party cookies” are cookies set by other companies whose functionality is embedded into our site (e.g., google.com).
+
+“Session cookies” are temporary cookies stored on your device while you visit our site. They expire when you close your browser. “Persistent cookies” are stored on your browser for a period of time after you leave our site. Persistent cookies expire on a set expiration date, or when they are deleted manually.
+
+You can choose whether to accept cookies by editing your browser settings. However, if cookies are refused, your experience on our site may be worse, and some features may not work as intended.
+
+B) Pixels
+
+Pixels (also known as “web beacons,” “GIFs” or “bugs”) are one-pixel transparent images located on web pages or messages. They track whether you have opened these web pages or messages. Upon firing, a pixel logs a visit to the current page or message and may read or set cookies.
+
+Pixels often rely on cookies to work, so turning off cookies can impair them. But even if you turn off cookies, pixels can still detect a web page visit.
+
+C) Javascript
+
+JavaScript is a programming language. It can be used to write trackers that, when embedded into a page, allow us to measure how you interact with our site and other sites.
+
+D) Software Development Kits (or SDKs)
+
+SDKs are pieces of code provided by our digital vendors (e.g., third-party advertising companies, ad networks and analytics providers) in our mobile apps to collect and analyze certain device and user data.
+
+E) Device Identifiers
+
+Device identifiers are user-resettable identifiers comprised of numbers and letters. They are unique to a specific device. They are stored directly on the device. Our use of device identifiers is limited to Google’s Android Advertising ID (AAID). They are used to recognize you and/or your devices(s) on, off and across different apps and devices for marketing and advertising purposes.
+
+F) ID Synching
+
+In order to decide what type of ad might interest you, our digital and marketing vendors sometimes link data — inferred from your browsing of other sites or collected from other sources — using a method knowns as “ID synching” or “cookie synching.” To do this, they match the tracker ID they have assigned to you with one or more tracker IDs that are held in another company’s database and that are likely also associated with you. Any of the linked trackers may have certain interests and other demographic information attributed to it. That information is then used to determine which ad to show you.
+
+Back to top
+2.What Trackers Do We Use?
+Below is a list of the types of trackers that appear on our site.
+
+Essential Trackers
+
+Essential trackers are required for our site to operate. They allow you to navigate our site and use its services and features (e.g., cookies that help you stay logged in). Without essential trackers, our site will not run smoothly; in fact, our site (or certain services or features) might not even be available to you simply because of technical limitations.
+
+Tracker name	Description of purpose	If tracker is a cookie, is it a persistent or session cookie? When do persistent cookies expire?	If tracker is a cookie, 1st party or 3rd party cookie? If 3rd party, indicate legal name and URL for cookie policy.
+LPSessionID	Customer support	session	LivePerson
+LPVisitorID	Customer support	1 year	LivePerson
+LPVID	Customer support	1 year	LivePerson
+nyt-a	User identification	1 year	first party
+NYT-S	User identification	1 year	first party
+nyt-gdpr	Geographic eligibility	4 hours	first party
+nyt-purr	Privacy eligibility	1 year	first party
+nyt-geo	Geographic information	4 hours	first party
+edu_cig_opt	Educational institution information	1 day	first party
+b2b_cig_opt	Business institution information	1 day	first party
+optimizelyEndUserId	Asset delivery	1 day	first party
+nyt-us	Geographic information	4 hours	first party
+nyt-jkidd	Data backend	1 year	first party
+datadome	Fraud detection	1 year	DataDome
+OTZ	Payment support (only used on the payment page, with Google Pay)	4 weeks	Google
+Preference Trackers
+
+Preference trackers allow us to store information about your choices, settings and preferences. They also help us recognize you when you return to our site, remember your language settings (among others) and customize our site accordingly. They are not essential to the functioning of our site.
+
+Tracker name	Description of purpose	If tracker is a cookie, is it a persistent or session cookie? When do persistent cookies expire?	If tracker is a cookie, 1st party (set by the site being visited) or 3rd party across different sites? Indicate 3rd party (full legal name and URL to cookie policy)	Privacy Policy and Opt-out
+NYT-Edition	Remember which edition user prefers	1 year	first party	Privacy Policy and Opt-out
+Analytics Trackers
+
+Analytics trackers collect or use information about your site use, which helps us improve our site. Among the uses of analytics trackers are to show us which pages are most frequently visited, help us record difficulties you have with our site, track subscription purchases and behaviors leading to subscription purchases, and measure how well ads perform.
+
+These trackers add up our readers’ visits to show us larger patterns in our audience. We look at these larger patterns to analyze site traffic.
+
+Tracker name	Description of purpose	If tracker is a cookie, is it a persistent or session cookie? When do persistent cookies expire?	If tracker is a cookie, 1st party (set by the site being visited) or 3rd party across different sites? Indicate 3rd party (full legal name and URL to cookie policy)	Privacy Policy and Opt-out
+__gads	User analytics	1 year	Google Analytics	
+Privacy Policy
+Opt-out
+_gcl_au	User analytics	3 months	Google Analytics	
+Privacy Policy
+Opt-out
+walley	User analytics	1 year	Google Analytics	
+Privacy Policy
+Opt-out
+walley_gid	User analytics	1 day	Google Analytics	
+Privacy Policy
+Opt-out
+iter_id	User analytics	9 years	Google Analytics	
+Privacy Policy
+Opt-out
+_gat_UA-58630905-1	User analytics	session	Google Analytics	
+Privacy Policy
+Opt-out
+_cb_ls	User analytics	1 year	Chartbeat	
+Privacy Policy
+Opt-out
+_cb	User analytics	1 year	Chartbeat	
+Privacy Policy
+Opt-out
+_cb_svref	User analytics	session	Chartbeat	
+Privacy Policy
+Opt-out
+_chartbeat2	User analytics	1 year	Chartbeat	
+Privacy Policy
+Opt-out
+_chartbeat4	User analytics	session	Chartbeat	
+Privacy Policy
+Opt-out
+sumologic.logger.session	Application logging	session	SumoLogic	
+Privacy Policy
+Opt-out
+Localytics SDK	User analytics in apps	Not applicable	Localytics	
+Privacy Policy
+(includes info on how to opt-out)
+AppsFlyer SDK	User analytics in apps	Not applicable	AppsFlyer	
+Privacy Policy
+Opt-out
+Mailchimp	Email User Analytics	Not applicable	Mailchimp	
+Privacy Policy
+Marketing Trackers
+
+These trackers help us determine which ads to show you for Times properties — both on our site and on other sites. To do this, these trackers use information about your behavior on various sites to target our ads.
+
+These trackers allow us to limit the number of times you see our ad across your devices. They help us personalize the ads we show you. They also enable us to measure the effectiveness of our marketing campaigns (e.g., measure if you subscribe after seeing our ads).
+
+Tracker name	Description of purpose	If tracker is a cookie, is it a persistent or session cookie? When do persistent cookies expire?	If tracker is a cookie, 1st party (set by the site being visited) or 3rd party across different sites? Indicate 3rd party (full legal name and URL to cookie policy)	Privacy Policy and Opt-out
+_fbp	Retargeting users on Facebook, only exists on marketing pages.	2 months	Facebook	
+Privacy Policy
+Opt-out
+fr	Retargeting users on Facebook, only exists on marketing pages.	2 months	Facebook	
+Privacy Policy
+Opt-out
+Facebook SDK	Retargeting users on Facebook, only exists on marketing pages.	Not applicable	Facebook	
+Privacy Policy
+Opt-out
+sc_at	Retargeting users on Snapchat, only exists on marketing pages.	1 year	Snap	
+Privacy Policy
+Opt-out
+bkdc	Building audiences to target users off-site and target on-site.	1 day	Oracle BlueKai	
+Privacy Policy
+Opt-out
+bku	Building audiences to target users off-site and target on-site.	1 day	Oracle BlueKai	
+Privacy Policy
+Opt-out
+personalization_id	Retargeting users on Twitter, only exists on marketing pages.	1 year	Twitter	
+Privacy Policy
+Opt-out
+ANONCHK	Retargeting users on Bing, only exists on marketing pages.	session	Microsoft Bing	
+Privacy Policy
+Opt-out
+MR	Retargeting users on Bing, only exists on marketing pages.	1 day	Microsoft Bing	
+Privacy Policy
+Opt-out
+MUID	Retargeting users on Bing, only exists on marketing pages.	1 year	Microsoft Bing	
+Privacy Policy
+Opt-out
+lang	Retargeting users on LinkedIn, only exists on marketing pages.	session	Microsoft LinkedIn	
+Privacy Policy
+Opt-out
+lidc	Retargeting users on LinkedIn, only exists on marketing pages.	1 day	Microsoft LinkedIn	
+Privacy Policy
+Opt-out
+UserMatchHistory	Retargeting users on LinkedIn, only exists on marketing pages.	4 weeks	Microsoft LinkedIn	
+Privacy Policy
+Opt-out
+bcookie	Retargeting users on LinkedIn, only exists on marketing pages.	2 years	Microsoft LinkedIn	
+Privacy Policy
+Opt-out
+bscookie	Retargeting users on LinkedIn, only exists on marketing pages.	2 years	Microsoft LinkedIn	
+Privacy Policy
+Opt-out
+everest_g_v2	Advertising to users through Adobe.	1 year	Adobe	
+Privacy Policy
+Opt-out
+ev_sync_enc	Advertising to users through Adobe.	1 year	Adobe	
+Privacy Policy
+Opt-out
+TDID	Operating non-personalized marketing	1 month	theTradeDesk	
+Privacy Policy
+Opt-out
+TDCPM	Operating non-personalized marketing	1 month	theTradeDesk	
+Privacy Policy
+Opt-out
+Advertising Trackers
+
+Advertising trackers help us determine which ads from third parties are selected for you. Some of these trackers collect or use information about your behavior on various sites to aid this targeting. These trackers sometimes limit the number of times you see an ad, make an ad more relevant to you or measure the effectiveness of an ad campaign.
+
+In the European Economic Area (E.E.A.), advertising is not personalized or targeted by third parties through personal data given to them. Instead, the ads you see are either not personalized, or personalized using only information that we have about you and that is not shared with third parties.
+
+We work with advertisers, ad agencies and other vendors to serve these ads. The ads served can include additional trackers.
+
+Tracker name	Description of purpose	If tracker is a cookie, is it a persistent or session cookie? When do persistent cookies expire?	If tracker is a cookie, 1st party (set by the site being visited) or 3rd party across different sites? Indicate 3rd party (full legal name and URL to cookie policy)	Privacy Policy and Opt-out
+NID	Operating non-personalized advertising	1 day	Google	
+Privacy Policy
+Opt-out
+S	Operating non-personalized advertising	session	Google	
+Privacy Policy
+Opt-out
+IDE	Operating non-personalized advertising	1 year	Google	
+Privacy Policy
+Opt-out
+Google Mobile Ads SDK	Operating non-personalized advertising	Not applicable	Google	
+Privacy Policy
+Opt-out
+UID	Advertising audience sizing	1 year	comScore	
+Privacy Policy
+(includes info on how to opt-out)
+comScore SDK	Advertising audience sizing in apps	Not applicable	comScore	
+Privacy Policy
+(includes info on how to opt-out)
+__cfduid	Brand surveys	4 weeks	IterateHQ	
+Privacy Policy
+Opt-out
+ReasearchNow.com	Brand surveys	1 year	Dynata	
+Privacy Policy
+Opt-out
+Back to top
+3.How Do I Manage Trackers?
+When you first come to our site, you may receive a notification that trackers are present. By clicking or tapping “accept,” you agree to the use of these trackers as described here.
+
+You can manage your tracker settings by opting out of specific (or all) trackers.
+
+To opt in or out of New York Times’ nonessential trackers, please click one of these buttons:
+Opt into New York Times nonessential trackers
+Opt out of New York Times nonessential trackers
+By clicking or tapping this button you are not opting out of any advertising-related third-party trackers. To opt out of all third-party trackers, please follow the instructions for your browser as well as the Ad Choices and Online Choices paragraphs below.
+
+In addition to the options above, you can refuse or accept trackers from our site (or any other site) in your browser’s settings. If you refuse trackers, you might not be able to sign in or use other tracker-dependent features of our site.
+
+Most browsers automatically accept cookies, but this is typically something you can adjust. Information for each browser can be found in the links below:
+
+Safari on desktop and Safari Mobile (iPhone and iPads): Note that, by default, Safari is engineered to protect you from being tracked from site to site unless you disable Intelligent Tracking Prevention (ITP).
+
+Firefox: By default, Firefox protects you from cross-site tracking so long as you have not disabled Enhanced Tracking Protection (ETP). There is therefore less need to manage cookies to protect your privacy.
+
+Chrome
+
+Microsoft Edge: Enabling tracking prevention with Edge will protect you from being tracked between sites, such that there will be less of a need to manage your cookies in order to protect your privacy.
+
+Samsung Internet Browser. Note that Samsung Internet Browser includes “Smart Watch” protection that works to help protect you from being tracked across sites.
+
+Brave: Brave has several mechanisms to keep you from being tracked online, but you can change your privacy settings if you wish to have greater control over its decisions.
+
+For more information about other browsers, please refer to this “All About Cookies” guide.
+
+To opt out of Google Analytics data collection, follow these Google instructions.
+
+To reset your device identifier, follow Google instructions and Apple instructions.
+
+The third-party advertisers, ad agencies and other vendors with which we work may be members of the Network Advertising Initiative, the Digital Advertising Alliance Self-Regulatory Program for Online Behavioural Advertising and/or the European Digital Advertising Alliance. To opt out of interest-based advertising from the participating companies, please visit AboutAds.info or the European Digital Advertising Alliance for laptops and NAI Mobile Choices or AppChoices for mobile devices. Note that opting out through these channels does not mean you will no longer see ads and is specific to the device and browser you are using. You will still receive other types of ads from these companies, and any type of ad from nonparticipating companies. The sites you visit may still collect your information for other purposes.
+
+Back to top

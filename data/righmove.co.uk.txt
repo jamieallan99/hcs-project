@@ -1,0 +1,139 @@
+Cookies
+What are Cookies?
+Cookies are small files which are stored on a user's computer and hold data relating to a specific website. Cookies are placed on the user's computer by that website and accessed each time a user browses the site. We primarily use cookies to collect data to help us improve our website by seeing which parts of the site are being used, how users are navigating to each page and what items on each page they prefer to click on. Nonetheless we would like you to know which cookies Rightmove employs, why we use them, and give you the option to opt-out of us using them on your device if you wish.
+
+Below we have listed each of the cookies that our site sets, with detail as to why we use them. For those that want a little more information, we've added information which details the exact purpose of every cookie we create. Lastly, we've included information about the time the cookie is kept on your system (is it kept after you leave the site, to be used when you return − persistent − or deleted once your visit is completed and only used for that visit − session).
+
+You can opt-out of certain cookie types by going to the cookie preference centre. Opting out will apply only to the browser or device that you are currently using, so you may need to change these settings again if you use other browsers or devices to browse the web.
+
+We will make every effort to recognise and respect your choices; however there is a small chance that not all cookies and similar methods of data capture will be covered by these settings. If this is a concern to you then we recommend that you change the settings in your browser. If you wish to restrict or block web browser cookies which are set on your device then you can do this through your browser settings; the Help function within your browser should tell you how. Alternatively, you may wish to visit www.aboutcookies.org, which contains comprehensive information on how to do this on a wide variety of desktop browsers.
+
+1. Strictly necessary cookies
+Some cookies are essential in order to enable you to move around the website and use its features. Without these cookies, we will not be able to connect you to our site properly.
+
+We spend a lot of time and effort ensuring that our site remains available all the time; to do that we have web servers running in many different locations. In order to ensure that your journey through the site works properly we like to keep you connected to the same locations. It also allows us to spread the load, meaning our site remains as performant as it can be.
+
+For visitors to our professional users site RightmovePlus, authentication cookies give the added reassurance of site security. These cookies ensure that only authenticated users have access to RightmovePlus, thus keeping our site as safe as possible. If you have any queries or require more information on this please email security@rightmove.co.uk
+
+Cookie Name	Description	Persistent or Session
+JSESSIONID	Used for managing your session	Session
+OptanonAlertBoxClosed	Consent banner and preference centre closed for OneTrust CMP	1 year
+OptanonConsent	Consent cookie for OneTrust CMP	1 year
+PDC	Used to remember information you have provided about yourself so that you can fill in forms quickly and easily	1 year
+PHPSESSID	Used for managing your sessions to keep you securely logged in and to ensure that any selections you make are retained as you browse our platforms. This expires when the browsing session ends or you choose to log out	Session
+RM_Register	Used when you register	1 year
+TS	Used for managing your session	Session
+__utm	Used to track where you have come from	2 years
+_dc_gtm	This cookie is used by Google Tag Manager to support Google Analytics on the site. It helps us monitor the use and performance of our website	1 minute
+_ga	Google Analytics helps measure the website traffic and perform vital analytics tasks. Please visit the Google Analytics Privacy Policy to find out further information about these cookies.	2 years
+_gaRM	Google Analytics helps measure the website traffic and perform vital analytics tasks. Please visit the Google Analytics Privacy Policy to find out further information about these cookies.	2 years
+_gaRM_gid	Google Analytics helps measure the website traffic and perform vital analytics tasks. Please visit the Google Analytics Privacy Policy to find out further information about these cookies.	24 hours
+_gat	Google Analytics used to throttle the request rate limiting	25 minutes
+_gat_	Google Analytics helps measure the website traffic and perform vital analytics tasks. Please visit the Google Analytics Privacy Policy to find out further information about these cookies.	90 days
+_gid	Google Analytics User Identifier. Please visit the Google Analytics Privacy Policy to find out further information about these cookies. This cookie collects information in an anonymous form.	1 day
+_gtag	Google Analytics helps measure the website traffic and perform vital analytics tasks. Please visit the Google Analytics Privacy Policy to find out further information about these cookies.	25 minutes
+beta_optin	Used to manage rollout of new functionality on the platforms	1 year
+cks_policy	Used to manage cookie preferences	1 year
+connect_sid	Used to manage your session on the mortgage pages and to ensure that any selections you make are retained during that session.	Session
+cuid	Used to manage your consent preferences	1 year
+eupubconsent	Used to store your consent preferences in relation to the collection of personal data.	1 year
+jsts	Used to secure data inputted by our professional users against corruption	Session
+permuserid	Used to identify your browser and device across sessions	1 year
+rmsessionid	Used for managing your session	Session
+sb-closed	Used to store if you have dismissed the app ad banner	7 days
+sb-installed	Used to store if you have viewed the app in the app store from the app ad banner	7 days
+siteType	Used to remember your preferences for viewing the platforms on your mobile phone	Session
+smartbanner_exited	Used to stores if you have dismissed the app ad banner	1 day
+sso2	Used to keep you signed in across all of our platforms	Session
+sso2a	Used for Two Factor Authentication to verify a visitors to our professional users' platform, Rightmove Plus	62 days
+sso2p	Used for one time login	6 weeks
+sso2v	Used for Two Factor Authentication to verify a visitor to our professional users' platform, Rightmove Plus	62 days
+ssoRef	Used to keep our professional users logged in to our platforms between sessions.	30 days
+sva	Used to keep visitors to our professional users' site, Rightmove Plus, on the same set of infrastructure	8 hours
+svp	Used to keep visitors to our professional users' site, Rightmove Plus, on the same set of infrastructure	8 hours
+svp2	Keeps visitors to our professional users site, Rightmove Plus, on the same set of infrastructure	8 hours
+svr	Used to distribute traffic across our servers evenly	8 hours
+topPCRSearch	Used to store latest price comparison report search locations so that when you return you get the information you are likely to want	14 days
+Local Storage
+In addition to cookies, local storage allows us to use a tiny bit of space on your machine to store information, in much the same way as cookies. We use this to store information which, we feel, enhances your journey through the site by remembering previous actions and making them default for the future. All local storage is persistent, with no expiry.
+
+Local Storage Name	Description
+typeAheadHist	Holds a history of locations typed into search, so that these appear first in the list when you start searching again
+RIGHTMOVE.UTIL.userPreferences	Stores the channel (lettings, sales etc) that you last searched in, for Draw a Search
+pcrLocationList	Last 10 searched for postcodes across the site, used for Price Comparison report
+RM.recentSearches_* family	Stores your recent searches
+RMmobile.contactagent_channel	To hold the information you have provided when contacting an agent to pre populate the form for you next time around.
+hiddenProperties	Used to remember if a user has chosen to hide a property or not.
+2. Functional cookies
+These cookies allow us to understand how people use our website and where they came from, so that we can measure and improve the performance of our website, as well as to remember your preferences. They help us see which pages are the most and least popular, and how visitors move around the Rightmove website. These cookies also allow us to give you tools like videos and currency converters. When we use the information from these cookies it is grouped together and therefore anonymous. If you do not allow these cookies we will not know when you have visited our website and will not be able to monitor its performance.
+
+Cookie Name	Description	Persistent or Session
+_gaexp	This cookie is used to determine a user's inclusion in an A/B experiment via Google Optimize and the expiry of experiments a user has been included in. Google Optimize is used to enhance user experience on our website.	90 days
+lastSearchChannel	Used to store the channel (residential lettings, commercial sales, etc) that you last searched in	30 days
+lastViewedFeaturedProperties	Used to remember the properties you have already seen	Session
+osLsId	Used to store the last overseas location you searched for, so that we can show you relevant properties	30 days
+ubvt	Used to allow us to test the effectiveness of different versions of web pages and to ensure that you consistently see the same version of a web page during a session	3 days
+3. Targeting and tracking
+These cookies record your visit to the Rightmove website, the individual pages you visit, the links you follow and the type of device you use. We will use this information to make the Rightmove website and the adverts we show you more relevant to your interests. Our use of these cookies might also mean that you may see Rightmove adverts when you visit Facebook. These cookies record your activity on the Rightmove website and our partners may use that information to show you adverts that they think you will be most interested in when you visit other websites. Our partners may also use information recorded by these cookies to see how well their adverts are performing. If you do not allow these cookies, you may see more content and adverts that do not match your interests.
+
+Cookie Name	Description	Persistent or Session
+1P_JAR	Used to track how you use our platforms and what adverts you have seen	1 month
+CONSENT	Used to track how you use our platforms and what adverts you have seen	16 years
+GPS	Used to display targeted advertising based on your activity across a broad range websites. 3rd party cookie belonging to Google	Session
+GoogleAdServingTest	Used to determine what adverts you have been served	Session
+IDE	This domain is owned by Doubleclick (Google). The main business activity is: Doubleclick is Googles real time bidding advertising exchange	1 year
+NID	Used to remember your preferences and other information. 3rd party cookie belonging to Google	6 months
+PREF	Used to build a profile of your interests in order to show you relevant adverts on other sites by uniquely identifying your browser and device. 3rd party cookie belonging to Google	8 months
+TPC	Used to store information about your search preferences to help us only show relevant promotions to you	1 month
+UID	Used to tracks unique visits for ComScore, an industry standard metrics company	1 year
+UIDR	Used to track unique visits for ComScore, an industry standard metrics company	1 year
+VISITOR_INFO1_LIVE	Used to track your preferences for Youtube videos embedded in other sites which version of the Youtube interface you are using. 3rd party cookie belonging to Youtube	6 months
+YSC	Used to track views of embedded Youtube videos. 3rd party cookie belonging to Youtube	Session
+__gads	This cookie is associated with the DoubleClick for Publishers service from Google. Its purpose is to do with the showing of adverts on the site, for which the owner may earn some revenue.	1 year
+_fbp	Used by Facebook to deliver adverts from third party advertisers	3 months
+_gcl	Used to determine how many times people who click on an advert go on to take an action	3 months
+_gcl_au	Used for research purposes about advert efficiency across multiple websites. 3rd party cookie belonging to Google AdSense	3 months
+_hjIncludedInSample	This cookie is associated with web analytics functionality and services from Hot Jar, a Malta based company. It uniquely identifies a visitor during a single browser session and indicates they are included in an audience sample.	2 minutes
+_twitter_sess	Used to allow you to utilise Twitter-related features from within the web page you are visiting. 3rd party cookie belonging to Twitter	Session
+advanced_ads_browser_width	Browser width, Responsive Ads	1 year
+advanced_ads_page_impressions	Number of previous page impressions, Advanced Ads Pro	183 days
+cdUserType	Used to tailor website content so that it is relevant to you	Session
+ct0	This domain is owned by Twitter. The main business activity is: Social Networking Services. Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting.	Session
+external_referer	This domain is owned by Twitter. The main business activity is: Social Networking Services. Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting.	1 week
+guest_id	Used to identify you and track your website usage. 3rd party cookie belonging to Twitter	6 months
+personalization_id	This domain is owned by Twitter. The main business activity is: Social Networking Services. Where twitter acts as a third party host, it collects data through a range of plug-ins and integrations, that is primarily used for tracking and targeting.	2 years
+player	This cookie is dropped by Vimeo who provide video content on the site	1 minute
+tcuid	Used to personalise content based on either your behaviour when using our platforms or on information that you have provided	1 year
+tuuid	Used to make adverts more relevant to you. 3rd party cookie belonging to bidswitch.net	2 years
+tuuid_lu	This cookie is usually provided by bidswitch.net and is used for advertising purposes.	2 years
+Third-Party Cookies
+
+You may notice some cookies that are not related to Rightmove. Some Rightmove web pages contain embedded content, like YouTube or Vimeo, which means you may be sent cookies from these websites. Also, if you share a link to a Rightmove page, the service you share it on (for example, Facebook) may set a cookie on your browser. We also use cookies from third-party advertising partners (see below for a list of our advertising partners) to deliver relevant adverts to you both on our platforms and on other websites. We do not control third-party cookies so please check the third-party websites for more information about their cookies, how to manage them and to opt-out of their use of cookies and behavioural advertising.
+
+Google
+
+You can learn how Google uses information from sites or apps that use their services by visiting their website.
+
+If you don't want Google to use information based on your Rightmove activity for the purpose of showing you more relevant advertisements, you can opt out by following the instructions specified on their website.
+
+For reference, Google operates the Google Display Network (comprising partner websites and some Google properties like YouTube), Google online ad serving products and the Google Ad Exchange, and Invite Media.
+
+PubMatic
+
+Google may delegate to another third-party agency, PubMatic, to deliver relevant advertisements to you on Rightmove.
+
+If you don't want PubMatic to use information based on your activity on Rightmove sites for the purpose of showing you more relevant ads, you can follow their specified opt-out procedures shown on the PubMatic website.
+
+Facebook
+
+For more information on how Facebook ads work, and to control the types of adverts shown to you, visit their website here. If you'd prefer that Facebook didn't use information based on your activity on Rightmove sites for the purpose of showing you more relevant ads, you can opt-out by accessing your Facebook settings.
+
+Hotjar
+
+We use Hotjar in order to better understand our users' needs and to optimize this service and experience. Hotjar is a technology service that helps us better understand our users experience (e.g. how much time they spend on which pages, which links they choose to click, what users do and don't like, etc.) and this enables us to build and maintain our service with user feedback. Hotjar uses cookies and other technologies to collect data on our users' behaviour and their devices (in particular device's IP address (captured and stored only in anonymized form), device screen size, device type (unique device identifiers), browser information, geographic location (country only), preferred language used to display our website). Hotjar stores this information in a pseudonymized user profile. Neither Hotjar nor we will ever use this information to identify individual users or to match it with further data on an individual user. For further details, please see Hotjar's privacy policy by clicking on this link.
+
+You can opt-out to the creation of a user profile, Hotjar's storing of data about your usage of our site and Hotjar's use of tracking cookies on other websites by following this opt-out link.
+
+Sovrn
+
+Sovrn allows Rightmove to measure the viewability and engagement of advertising content that users see across the pages they visit on the Rightmove website, to allow Rightmove to optimize and improve the overall user experience. You can learn more about Sovrn and the way they use data by viewing their privacy policy here

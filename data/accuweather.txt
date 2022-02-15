@@ -1,0 +1,22 @@
+Policy on Cookies, Web Beacons, Pixels, and Similar Technologies
+Our AccuWeather Sites use technologies such as Cookies, Pixel Tags, Web Beacons, Flash Shared Objects, HTML local storage or HTML mini databases to help improve your experience. These AccuWeather Sites include our websites, mobile applications and other digital products.
+
+These technologies are small data files that are placed on your device. The names and types of these technologies change from time to time. In this policy, we may refer to the specific names or we may simply use the term "cookies" to describe them.
+
+Cookies serve a number of purposes. We use them:
+
+to provide you a better, faster and safer experience
+to help us find out what parts of the site your device last visited, so we can deliver content that is most relevant to you
+to provide advertising, which enables us to provide many of our AccuWeather Sites free of charge or at low rates
+to analyze and optimize the performance of our AccuWeather Sites
+Below are examples of some commonly used cookie technologies.
+
+Cookies are files with small amounts of data, which may include an anonymous unique identifier. If you are accessing an AccuWeather Site through a browser, including a browser on a mobile device, cookies may be sent to the browser and stored in the device's memory. This identifies the device the next time it accesses an AccuWeather Site through a browser.
+Pixel Tags, Web Beacons, Flash Shared Objects/HTML5 Local Storage/HTML5 Mini Databases. Many mobile devices use these technologies which allow for the storage of information on the mobile devices and, in effect, allow the enhancement of internet browsing. Flash Shared Objects, HTML5 Local Storage and HTML5 Mini Databases also allow the device to track a user's web browsing movements across the internet and not just on one particular website.
+Some cookies are "first party cookies" that come directly from us. Some cookies are "third party cookies" that come from third-party providers who help us operate our AccuWeather Sites, who serve advertisements to your device when you use AccuWeather Sites. Some third-party cookies also may come from third-party providers whose content is embedded in an AccuWeather Site or accessed through an AccuWeather Site.
+
+You can instruct the browser on the device, or other settings on the device to refuse all cookies or to indicate when a cookie is being sent. However, if you do not permit the device to accept cookies, your experience may not be optimal when you return because we may not recognize the device. For example, if we do not recognize a device, we may require you to re-enter a location you have saved for convenience or re-enter a password.
+
+You also can opt out of receiving cookies by visiting https://www.aboutads.info/choices or https://networkadvertising.org/managing/opt_out.asp or https://choice.live.com/AdvertisementChoice or https://youronlinechoices.eu/ .
+
+For more on other information we collect and store, see our Privacy Policy.

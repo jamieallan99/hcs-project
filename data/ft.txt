@@ -1,0 +1,78 @@
+Cookies
+The Financial Times uses cookies to keep our sites reliable, secure and personalised. When you accept cookies, this helps make the site better by remembering your preferences, customising content or ads, and enhancing your experience of our premium news, insight and analysis.
+
+This Cookie Policy applies to all websites and web applications which link to this policy and are published by FT companies (“Sites”).
+
+This policy should be read alongside our Privacy Policy, which explains how we use personal information.
+
+If you have any queries about the way we use your personal information or cookies, please contact our Data Protection Officer at privacy.officer@ft.com.
+
+If you wish to manage your cookies, please follow the instructions in the “How to manage cookies” section below.
+
+What are cookies?
+Cookies are small text files which a website may place on your computer or device when you visit a site. The cookie will help the website, or another website, to recognise your device the next time you visit. Web beacons, pixels or other similar files can also do the same thing. We use the term “cookies” in this policy to refer to all files that collect information in this way.
+
+Cookies serve many functions. For example, they can help us to remember your username and preferences, analyse how well our Sites are performing, or allow us to recommend content we believe will be most relevant to you.
+
+The majority of websites use cookies to collect and retain personal information about their visitors. Most cookies collect general information, such as how visitors arrive at and use our Sites, the device they are using, their internet protocol address (IP address), what pages they are viewing and their approximate location (for example, we would be able to recognise that you are visiting our Sites from London).
+
+Purpose of cookies
+We group our cookies into the below categories.
+
+Operating our Sites
+Some cookies are essential for the operation of our Sites. This includes cookies for the following purposes:
+
+Access – we use these cookies to identify subscribers and ensure access to subscription only pages, including premium access.
+Billing – if your subscription is provided by your employer or educational institution under a group subscription, we use cookies for the purposes of measuring activity and billing.
+Performance – we use these cookies to monitor Site performance. This allows us to provide a high quality experience by quickly identifying and fixing any issues that arise. For example, we might use performance cookies to track error messages, and to determine improvements to our Sites.
+Functionality – we use functionality cookies to allow us to remember your preferences. For example, we use functionality cookies to provide you with enhanced services, such as allowing you to watch a video online or comment on a blog.
+Analytics – we use cookies to help us understand our audience and the success of advertising campaigns. For example, we count articles views to present ‘Most Read’ content. We also use analytics cookies to keep track of how many advertising impressions have been served for a campaign and to manage the frequency at which you see the same adverts.
+Fraud prevention – we use cookies to monitor and prevent suspicious activity and fraudulent traffic
+Personalisation 
+We use cookies to improve your experience of our products by personalising our Sites. For example, we help you to find new content and recommend email alerts based on the topics you read. Where our Sites have such functionality, you can manage elements of personalisation in your account.
+
+Advertising
+We use cookies to serve you with advertisements that we believe are relevant to you and your interests. You may see these advertisements on our Sites and on other sites that you visit. For example, if you read a number of articles on motoring on FT.com or on other sites, you would see more car advertisements as we have inferred that you are interested in this topic. You may also see advertisements for our products and services on other websites if you have previously visited our Sites.   
+
+For our Sites that offer behaviourally or demographically targeted advertising, you will have the opportunity to turn this off in your account. Please note, if you turn this off you will still see the same number of advertisements but they may be less relevant to you. You may continue to see “contextual” advertisements that are not targeted based on your personal information – for example, a motoring advertisement presented on a motoring article.
+
+Third party cookies on our Sites
+We also use third party cookies on our Sites that fall into the categories above (“third party cookies”) for the following reasons:
+
+to help us monitor traffic on our Sites (like many companies, we use Google Analytics to do this);
+to identify fraudulent or non-human traffic;
+to assist with market research;
+to improve Site functionality;
+to monitor compliance with our terms and conditions and copyright policy.
+We also use third party cookies for the purpose of programmatic advertising. This is where we sell digital advertising space through the use of automated technology via Google Doubleclick (AdX).
+
+These third party cookies are used within programmatic for measurement and attribution, and management of frequency. They may also be used for personalisation of advertisements based on data you have shared with third parties, to the extent that you have consented to this.
+
+Advertisers sometimes use their own cookies to measure performance and to identify fraudulent or non-human traffic. To the extent that you have given them your consent to do so, advertisers may also provide you with targeted advertising based on their data. For example, advertisers may use a profile they have built either on their own site or on sites that you have previously visited to present you with more relevant advertisements during your visit to FT.com.  
+
+Our standard advertising terms and conditions do not permit our advertisers to drop their own cookies for profiling or retargeting without your consent.
+
+Use of pixels in emails
+Our emails often contain a single, campaign-unique “web beacon pixel” to tell us whether, and how many times, our emails are opened and verify any clicks through to links or advertisements within the email. We use this information for purposes including:
+
+Determining which of our emails are more interesting to users;
+Determining users’ activity and engagement with our products and services;
+Informing our advertisers (in aggregate) how many users have clicked on their advertisements.
+The pixel will be deleted when you delete the email. If you do not wish the pixel to be downloaded to your device, you should select to receive emails from us in plain text rather than HTML via your email provider settings.
+
+How to manage cookies
+If you wish to manage your cookies, please follow the instructions on our Manage Cookies page. Please remember that if you choose to disable cookies, certain sections of our Sites may not work properly.
+
+For more information about cookies and how to manage them, please visit:
+
+www.allaboutcookies.org
+
+More information
+Further information about our data processing can be found in our Privacy Policy.
+
+If you have any queries regarding this Cookie Policy, please contact our Data Protection Officer at privacy.officer@ft.com.
+
+Changes to this Cookie Policy
+This policy is effective from 14/05/2018.
+
+Any changes we may make to this cookie policy will be posted on this page. If changes are significant, we may choose to notify you by email or to clearly indicate on our home page that the policy has been updated.  

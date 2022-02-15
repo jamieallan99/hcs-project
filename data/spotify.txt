@@ -1,0 +1,117 @@
+Spotify Cookie Policy
+Effective as of 2020-08-10
+
+1 What are cookies?
+2 How do we use cookies?
+3 Options for managing cookies and interest-based ads
+4 Updates to this Policy
+5 How to contact us
+
+Hello, and welcome to Spotify's Cookie Policy ("Policy").
+
+The objective of this Policy is to provide you, a user of Spotify's services and/or websites (collectively, the "Services"), with clear information about the cookies that Spotify uses, the role they play in helping us provide Spotify to you, and the choices you have when it comes to managing your cookie settings.
+
+1. What are cookies?
+Cookies are files which are downloaded to your device, for example, when you visit a website. They are useful because they allow Spotify and our partners to recognise a user's device and support the continuity of your experience. You can find more information about cookies at: www.allaboutcookies.org or www.youronlinechoices.eu.
+
+2. How do we use cookies?
+Cookies do lots of different jobs, like letting you navigate between pages efficiently, remembering your preferences, and improving your user experience. They can also help to ensure that ads you see online are more relevant to you and your interests.
+
+There are a few different categories of cookies, including:
+
+Strictly Necessary Cookies
+
+These cookies are set by Spotify or a third party on our behalf, and are essential to enable you to use the basic features of our Services, such as technically delivering content, setting your privacy preferences, logging in, or filling in forms. Without these cookies, services you have asked for e.g. payment, cannot be provided.
+
+Optional Cookies
+
+Optional cookies may be "first party cookies" or "third party cookies" as explained in the table below. You can find out more about how to control "Always Active" cookies in Options for managing cookies and interest-based ads.
+
+Optional Cookie Type	Purposes
+First party cookies - these are cookies set by Spotify or by a third party on our behalf.
+First party functional cookies	These cookies allow the website to remember choices you make (such as your user name, language or the region you are in) and provide enhanced, more personal features and content. These cookies can also be used to remember changes you have made to text size, fonts and other parts of web pages that you can customise. If you do not allow these cookies then some or all of these services may not function properly.
+First party performance cookies	These cookies gather data about how visitors use our Services to enhance the performance of our Services. For example, these cookies allow us to count visits and traffic sources so we can measure and improve the performance of our Services. They help us to know which pages are the most and least popular and see how visitors interact with our Services. If you do not allow these cookies we will not be able to monitor the performance of our Services.
+First party targeting cookies	These cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaigns. They remember that you have visited a website and this information may be shared with other organisations such as advertisers. These cookies collect information about your browsing habits in order to make advertising relevant to you and your interests.
+Third-party cookies - these are cookies that are set by a third party or set by Spotify at the request of a third party. If you visit the Spotify Services and we set a cookie on behalf of a third party, this would be a third-party cookie.
+Personalised Ads	Third party cookies are set for the following purposes relating to personalised ads:
+
+- select personalised ads - personalised ads can be shown to you based on a user profile or other historical user data;
+
+- create a personalised ads profile - a profile can be built about you and your interests to show you personalised ads that are relevant to you; and
+
+- select basic ads - ads can be shown using real-time information about the context in which the ad will be shown, such as the content you’re viewing, the app you’re using, your approximate location, or your device type.
+Personalised Content	Third party cookies are set for the following purposes relating to personalised content:
+
+- select personalised content - personalised content can be shown to you based on a user profile or other historical user data; and
+
+- create a personalised content profile - a profile can be built about you and your interests to show you personalised content that is relevant to you.
+Ad and content measurement, audience insights and product development	Third party cookies are set for the following purposes relating to ad and content measurement, audience insights and product development:
+
+- measure ad performance - the performance and effectiveness of ads that you see or interact with can be measured;
+
+- develop and improve products - your data can be used to improve existing systems and software, and to develop new products;
+
+- apply market research to generate audience insights - market research can be used to learn more about the audiences who visit sites/apps and view ads; and
+
+- measure content performance - the performance and effectiveness of content that you see or interact with can be measured.
+Always Active	Finally, third party cookies are also set for the following purposes:
+
+- ensuring security, prevent fraud, and debug - your data can be used to monitor for and prevent fraudulent activity, and ensure systems and processes work properly and securely;
+
+- technically delivering ads or content - your device can receive and send information that allows you to see and interact with ads and content;
+
+- matching and combining offline data sources - data from offline data sources can be combined with your online activity in support of one or more purposes;
+
+- receiving and using automatically-sent device characteristics for identification - your device might be distinguished from other devices based on information it automatically sends, such as IP address or browser type; and
+
+- linking different devices - different devices can be determined as belonging to you or your household in support of one or more of purposes.
+
+These purposes are described as “Always Active”. You can find out more about how to control “Always Active” cookies in Section 3 where we describe our Consent Management Platform.
+3. Options for managing cookies and interest-based ads
+There are several options available for managing your cookie preferences, depending on the cookie type and your device. Each of the options are described below. Please note that no one option is sufficient to manage all cookies on all devices. Therefore, you may wish to combine one or more options for complete coverage.
+
+Browser Settings
+You can use your web browser settings to accept, refuse and delete cookies. You can withdraw or modify your consent to our use of cookies at any time, with the exception of strictly necessary cookies (as described above). To do this, follow the instructions provided by your browser (usually located within the "Help", "Tools" or "Edit" settings).
+
+Consent Management Platform
+In addition, Spotify participates in the IAB Europe Transparency and Consent Framework and complies with its specifications and policies. We use a consent management platform ("CMP") with the identification number 28. You may view the CMP and access your cookie settings at CMP. The CMP allows you to consent to the setting of optional cookies by us and our third-party partners. Using the CMP, you can manage your preferences in relation to how first party cookies are set according to the category of cookie, as described in Section 2 How do we use cookies? . Additionally, third party cookies can be managed according to the purpose for which your data is processed or according to which third-party partners are involved. The CMP also allows us to maintain records of your consent. If you wish to update your consent choices via the CMP, please visit CMP.
+
+As set out above, certain third party optional cookie purposes are described as "Always Active", however if you do not wish cookie data to be processed for these purposes then you may toggle off the control next to "store and/or access information" on a device in the CMP CMP.
+
+Please note that as with your web browser settings you will not be able to withdraw consent for cookies which are strictly necessary for the Service to operate.
+
+Mobile Identifiers
+On your mobile device, your operating system may provide you with options to opt out of interest based advertising or to otherwise reset your mobile identifier. This is a unique identifier that can be used to identify a mobile device which works in a similar way to a cookie. For example, you may use the "Limit Ad Tracking" setting (on iOS devices) or a setting to "Opt out of Interest-Based Ads" (on Android) which allows you to limit the use of information about your use of apps for purposes of serving ads targeted to your interests.
+
+Cookies on the Spotify Desktop Application
+You can withdraw your consent to our use of cookies on Spotify's desktop application at any time. If you no longer wish to receive cookies, navigate to your Account Settings page on desktop to find the control under "Advanced" - "Privacy". When the control is turned on, it will block cookies from that installation of the Spotify desktop application on that computer; if you have Spotify installed on more than one machine, or if you re-install the application, then you will need to turn the feature on for each installation. You will need to restart the application for this feature to take effect. Please note that if you set the Spotify desktop application to block cookies, then your Spotify experience may be affected.
+
+Interest-Based Advertising
+Certain targeted advertisements that we (or a service provider acting on our behalf) display to you based on information about your online activities across websites and other interactive properties operated by third parties may include the "Ad Choices" icon or another mechanism to opt out of receiving interest-based advertisements. You may click on the AdChoices icon or visit www.aboutads.info to receive more information about the collection and use of information about your online activities for interest based advertising or to learn how to opt out of having your data used for interest based advertising by Digital Advertising Alliance (DAA) participating companies.
+
+Canadian users can also visit www.youradchoices.ca.
+European users can also visit www.youronlinechoices.com to learn how to opt out of having their data used for interest-based advertising by European Interactive Digital Advertising Alliance (EDAA) member companies.
+The Network Advertising Initiative's (NAI) Opt-Out Tool at www.networkadvertising.org/choices allows you to opt out from the use of information about your online activities for interest based advertising by NAI member companies.
+You may also opt-out of receiving interest-based advertisements by turning off the "Tailored ads" toggle, located in the Privacy Settings page of your Spotify Account Settings. If you opt-out of receiving interest-based ads using the Tailored ads toggle, Spotify will not share your information with third party advertising partners or use information received by them to show you interest-based ads. We will also not show you interest-based ads based on information Spotify collects about your use of the Spotify Service over time. If you opt out, we will still show you ads based on your Spotify registration information and real-time usage but they will not be specifically tailored to you. For more information, please visit the Spotify Privacy Center.
+
+Please note that even if you opt out using the mechanisms above, you may still receive advertisements when using the Spotify Service.
+
+4. Updates to this Policy
+We may occasionally make changes to this Policy.
+
+When we make material changes to this Policy, we'll provide you with prominent notice e.g., by displaying a prominent notice within the Spotify Service or by sending you an email if you are a user of the Spotify Service. We may notify you in advance.
+
+If you want to find out more about this Cookie Policy and how Spotify uses your personal data, please visit the Privacy Center to find out more.
+
+5. How to contact us
+Thank you for reading our Cookie Policy. If you have any questions about this Cookie Policy, please contact our Data Protection Officer by using the 'Contact Us' form on the Privacy Center or by writing to us at the following address:
+
+Spotify AB
+
+Regeringsgatan 19, SE-111 53 Stockholm
+
+Sweden
+
+We hope you enjoy Spotify!
+
+© Spotify AB.
