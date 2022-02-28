@@ -2,6 +2,8 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy_splash import SplashRequest
 
+from data import get_list_of_domains
+
 load_page_script="""
     function main(splash)
         assert(splash:go(splash.args.url))
@@ -36,7 +38,7 @@ load_page_script="""
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = [ 'http://google.com', 'http://facebook.com']
+    start_urls = get_list_of_domains()[:27]#  [ 'http://google.com', 'http://facebook.com']
     custom_settings = {
         'SPLASH_URL': 'http://localhost:8050',
         'DOWNLOADER_MIDDLEWARES': {
@@ -52,7 +54,7 @@ class PolicyCrawler(scrapy.Spider):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.data = []
+        self.data = {}
         self.output_callback = kwargs.get('args').get('callback')
 
     def start_requests(self): 
@@ -63,8 +65,8 @@ class PolicyCrawler(scrapy.Spider):
            'render_all': 1,
            'lua_source': load_page_script
         }
-        for url in self.start_urls: 
-            yield SplashRequest(url, self.parse, 
+        for url in self.start_urls:
+            yield SplashRequest("http://www."+url, self.parse, 
                 endpoint='execute', 
                 #args={'wait': 1}, 
                 args=splash_args
@@ -72,9 +74,17 @@ class PolicyCrawler(scrapy.Spider):
     def parse(self, response):
 
         html = response._body.decode("utf-8") 
-        print(html)
-        for page in response.css('body'):
-            self.data.append(page.extract())
+        #print(html)
+
+        key = response.url
+        item1 = response.xpath("//div[contains(.//text(), 'cookie')]/../..").get()
+        item2 = response.xpath("//p[contains(.//text(), 'cookie')]/../..").get()
+        item3 = response.xpath("//span[contains(.//text(), 'cookie')]/../..").get()
+        
+        item2_or_3 = item2 if item2 else item3
+        self.data[key] = item1 if  item1 else item2_or_3
+        # for page in response.css('title::text').getAll():
+        #     self.data.append(page.get())
         # if you wanna extract more than whole body
         # for title in response.css('h2.entry-title'):
         #     yield {'title': title.css('a ::text').extract_first()}
@@ -92,7 +102,7 @@ class Crawler:
     def __init__(self):
         self.output = None
         self.process = CrawlerProcess({
-            'USER_AGENT': "Chrome/27.0.1453.93"
+            'USER_AGENT': "Chrome/98.0.4758.102"
         })
 
     def yield_output(self, data):
