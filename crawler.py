@@ -38,7 +38,7 @@ load_page_script="""
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = get_list_of_domains()[:27]#  [ 'http://google.com', 'http://facebook.com']
+    start_urls = get_list_of_domains()[:50]
     custom_settings = {
         'SPLASH_URL': 'http://localhost:8050',
         'DOWNLOADER_MIDDLEWARES': {
@@ -77,9 +77,18 @@ class PolicyCrawler(scrapy.Spider):
         #print(html)
 
         key = response.url
-        item1 = response.xpath("//div[contains(.//text(), 'cookie')]/../..").get()
-        item2 = response.xpath("//p[contains(.//text(), 'cookie')]/../..").get()
-        item3 = response.xpath("//span[contains(.//text(), 'cookie')]/../..").get()
+        if key=="http://www.microsoft.com":
+            item1 = None
+            item2 = response.xpath("//p[contains(.//text(), 'cookie')]").get()[:1350]
+            item3 = None
+        elif key=="http://www.support.google.com":
+            item1 = None
+            item2 = response.xpath("//span[contains(.//text(), 'cookie')]").get()[:1000]
+            item3 = None
+        else:
+            item1 = response.xpath("//span[contains(., 'cookie')]/..").get()
+            item2 = response.xpath("//p[contains(., 'cookie')]/..").get()
+            item3 = response.xpath("//div[contains(., 'cookie')]/..").get()
         
         item2_or_3 = item2 if item2 else item3
         self.data[key] = item1 if  item1 else item2_or_3
