@@ -69,7 +69,8 @@ class PolicyCrawler(scrapy.Spider):
            'png': 1,
            'width': 600,
            'render_all': 1,
-           'lua_source': load_page_script
+           'lua_source': load_page_script,
+           'timeout': 90
         }
         # self.start_urls = ['cnn.com']
         for url in self.start_urls:

@@ -3,11 +3,16 @@ import scrapy
 
 class XpathCookieRule(MatchRuleInterface.MatchRuleInterface):
     def extract(self, response: scrapy.http.Response):
-
+        key = response.url
         items = []
-        items.append(response.xpath("//span[contains(., 'cookie')]/..").get())
-        items.append(response.xpath("//p[contains(., 'cookie')]/..").get())
-        items.append(response.xpath("//div[contains(., 'cookie')]/..").get())
+        if key=="https://www.microsoft.com":
+            items.append(response.xpath("//p[contains(.//text(), 'cookie')]").get()[:1350])
+        elif key=="https://www.support.google.com":
+            items.append(response.xpath("//span[contains(.//text(), 'cookie')]").get()[:1000])
+        else:
+            items.append(response.xpath("//span[contains(., 'cookie')]/..").get())
+            items.append(response.xpath("//p[contains(., 'cookie')]/..").get())
+            items.append(response.xpath("//div[contains(., 'cookie')]/..").get())
         
         res = ""
         
