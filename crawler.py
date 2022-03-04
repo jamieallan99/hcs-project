@@ -3,11 +3,13 @@ from scrapy.crawler import CrawlerProcess
 from scrapy_splash import SplashRequest
 
 from data import get_list_of_domains
+from matchrules.XpathCookieRule import XpathCookieRule
+
 
 load_page_script="""
     function main(splash)
         assert(splash:go(splash.args.url))
-        splash:wait(5)
+        splash:wait(3)
 
         function wait_for(splash, condition)
             while not condition() do
@@ -28,7 +30,7 @@ load_page_script="""
         end)
 
         -- repeat
-        -- splash:wait(5))
+        -- splash:wait(2))
         -- until( splash:select('[target]') ~= nil )
 
         return {html=splash:html()}
@@ -56,6 +58,10 @@ class PolicyCrawler(scrapy.Spider):
         super().__init__(**kwargs)
         self.data = {}
         self.output_callback = kwargs.get('args').get('callback')
+        self.rules = [
+            XpathCookieRule,
+        ]
+        
 
     def start_requests(self): 
         splash_args = {
@@ -65,41 +71,31 @@ class PolicyCrawler(scrapy.Spider):
            'render_all': 1,
            'lua_source': load_page_script
         }
+        # self.start_urls = ['cnn.com']
         for url in self.start_urls:
-            yield SplashRequest("http://www."+url, self.parse, 
+            yield SplashRequest("https://www."+url, self.parse, 
                 endpoint='execute', 
                 #args={'wait': 1}, 
                 args=splash_args
            )
     def parse(self, response):
-
-        html = response._body.decode("utf-8") 
-        #print(html)
-
         key = response.url
-        if key=="http://www.microsoft.com":
-            item1 = None
-            item2 = response.xpath("//p[contains(.//text(), 'cookie')]").get()[:1350]
-            item3 = None
-        elif key=="http://www.support.google.com":
-            item1 = None
-            item2 = response.xpath("//span[contains(.//text(), 'cookie')]").get()[:1000]
-            item3 = None
-        else:
-            item1 = response.xpath("//span[contains(., 'cookie')]/..").get()
-            item2 = response.xpath("//p[contains(., 'cookie')]/..").get()
-            item3 = response.xpath("//div[contains(., 'cookie')]/..").get()
+        bannerHtml = self.runRules(response)
         
-        item2_or_3 = item2 if item2 else item3
-        self.data[key] = item1 if  item1 else item2_or_3
-        # for page in response.css('title::text').getAll():
-        #     self.data.append(page.get())
-        # if you wanna extract more than whole body
-        # for title in response.css('h2.entry-title'):
-        #     yield {'title': title.css('a ::text').extract_first()}
-
-        # for next_page in response.css('div.prev-post > a'):
-        #     yield response.follow(next_page, self.parse)
+        if bannerHtml is not None and len(bannerHtml) > 0:
+            self.data[key] = bannerHtml
+        else:
+            self.data[key] = "FTC"
+            
+    def runRules(self, response):
+        i = 0
+        res = "" 
+        while i < len(self.rules) and len(res) == 0:
+            rule = self.rules[i]()
+            res = rule.extract(response)
+            i+=1
+        
+        return res
 
 
     def close(self, spider, reason):

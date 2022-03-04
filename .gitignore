@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+output/*
 temp_file.txt
 
 # C extensions
