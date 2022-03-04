@@ -6,7 +6,7 @@ class XpathCookieRule(MatchRuleInterface.MatchRuleInterface):
         key = response.url
         items = []
         if key=="https://www.microsoft.com":
-            items.append(response.xpath("//p[contains(.//text(), 'cookie')]").get()[:1350])
+            items.append(response.xpath("//p[contains(.//text(), 'cookie')]").get()[:1300])
         elif key=="https://www.support.google.com":
             items.append(response.xpath("//span[contains(.//text(), 'cookie')]").get()[:1000])
         else:
