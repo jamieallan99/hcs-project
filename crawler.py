@@ -22,7 +22,7 @@ load_page_script="""
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = get_list_of_domains()
+    start_urls = get_list_of_domains()[501:]
     custom_settings = {
         'SPLASH_URL': 'http://localhost:8050',
         'DOWNLOADER_MIDDLEWARES': {
@@ -62,7 +62,7 @@ class PolicyCrawler(scrapy.Spider):
         for url in self.start_urls:
             domain = url.split('.')[0]
             top_level_domain = url.split('.')[-1]
-            if domain not in self.parsed_domains and top_level_domain in ['com', 'uk']: 
+            if domain not in self.parsed_domains and top_level_domain in ['com', 'uk', 'edu']:
                 self.parsed_domains.add(domain)
                 yield SplashRequest("https://"+url, self.parse, 
                     endpoint='execute', 
