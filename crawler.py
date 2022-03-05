@@ -22,7 +22,7 @@ load_page_script="""
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = get_list_of_domains()[501:]
+    start_urls = get_list_of_domains()
     custom_settings = {
         'SPLASH_URL': 'http://localhost:8050',
         'DOWNLOADER_MIDDLEWARES': {
