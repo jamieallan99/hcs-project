@@ -15,10 +15,10 @@ pip install -r requirements.txt
 
 https://www.docker.com/products/docker-desktop
 
-- run docker
+- run docker ( add -d flag before -p to run in the background)
 
 ```
-docker run -p 8050:8050 scrapinghub/splash
+docker run -p 8050:8050 scrapinghub/splash --max-timeout 300
 ```
 
 - run main.py

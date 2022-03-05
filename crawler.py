@@ -1,38 +1,20 @@
+from email import header
+from multiprocessing.connection import wait
+from wsgiref import headers
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy_splash import SplashRequest
 
 from data import get_list_of_domains
 from matchrules.XpathCookieRule import XpathCookieRule
-
+from matchrules.CookieIdRule import CookieIdRule
+from matchrules.OneTrustSdkRule import OneTrustSdkRule
+from matchrules.CookieClassRule import CookieClassRule
 
 load_page_script="""
     function main(splash)
         assert(splash:go(splash.args.url))
-        splash:wait(3)
-
-        function wait_for(splash, condition)
-            while not condition() do
-                splash:wait(0.5)
-            end
-        end
-
-        local result, error = splash:wait_for_resume([[
-            function main(splash) {
-                setTimeout(function () {
-                    splash.resume();
-                }, 5000);
-            }
-        ]])
-
-        wait_for(splash, function()
-            return splash:evaljs("document.querySelector('[target]') != null")
-        end)
-
-        -- repeat
-        -- splash:wait(2))
-        -- until( splash:select('[target]') ~= nil )
-
+        assert(splash:wait(3))
         return {html=splash:html()}
     end
 """
@@ -40,12 +22,13 @@ load_page_script="""
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = get_list_of_domains()[:50]
+    start_urls = get_list_of_domains()
     custom_settings = {
         'SPLASH_URL': 'http://localhost:8050',
         'DOWNLOADER_MIDDLEWARES': {
             'scrapy_splash.SplashCookiesMiddleware': 723,
             'scrapy_splash.SplashMiddleware': 725,
+            'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
             'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
         },
         'SPIDER_MIDDLEWARES': {
@@ -60,33 +43,43 @@ class PolicyCrawler(scrapy.Spider):
         self.output_callback = kwargs.get('args').get('callback')
         self.rules = [
             XpathCookieRule,
+            CookieIdRule, 
+            OneTrustSdkRule,
+            CookieClassRule  
         ]
+        self.crawled_sucess = 0
+        self.ftc_count = 0
+        self.parsed_domains = set()
         
 
     def start_requests(self): 
         splash_args = {
-           'html': 1,
-           'png': 1,
-           'width': 600,
-           'render_all': 1,
            'lua_source': load_page_script,
-           'timeout': 90
+           'timeout': 200,
+           'width': 1024,
         }
-        # self.start_urls = ['cnn.com']
+        headers = {'User-Agent': 'my-test-banner-app'}
         for url in self.start_urls:
-            yield SplashRequest("https://www."+url, self.parse, 
-                endpoint='execute', 
-                #args={'wait': 1}, 
-                args=splash_args
-           )
+            domain = url.split('.')[0]
+            top_level_domain = url.split('.')[-1]
+            if domain not in self.parsed_domains and top_level_domain in ['com', 'uk']: 
+                self.parsed_domains.add(domain)
+                yield SplashRequest("https://"+url, self.parse, 
+                    endpoint='execute', 
+                    #args={'wait': 1}, 
+                    args=splash_args,
+                    headers=headers
+                )
     def parse(self, response):
         key = response.url
         bannerHtml = self.runRules(response)
         
         if bannerHtml is not None and len(bannerHtml) > 0:
+            self.crawled_sucess+=1
             self.data[key] = bannerHtml
         else:
-            self.data[key] = "FTC"
+            self.ftc_count+=1
+            self.data[key] = "FailedToFindBanner"
             
     def runRules(self, response):
         i = 0
@@ -100,6 +93,8 @@ class PolicyCrawler(scrapy.Spider):
 
 
     def close(self, spider, reason):
+        print(f"Succefully extracted {self.crawled_sucess}")
+        print(f"Failed to extact banner from {self.ftc_count} sites")
         self.output_callback(self.data)
 
 
@@ -107,9 +102,7 @@ class Crawler:
 
     def __init__(self):
         self.output = None
-        self.process = CrawlerProcess({
-            'USER_AGENT': "Chrome/98.0.4758.102"
-        })
+        self.process = CrawlerProcess()
 
     def yield_output(self, data):
         self.output = data
