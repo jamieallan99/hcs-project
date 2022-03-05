@@ -1,46 +1,100 @@
+from email import header
+from multiprocessing.connection import wait
+from wsgiref import headers
 import scrapy
 from scrapy.crawler import CrawlerProcess
+from scrapy_splash import SplashRequest
+
+from data import get_list_of_domains
+from matchrules.XpathCookieRule import XpathCookieRule
+from matchrules.CookieIdRule import CookieIdRule
+from matchrules.OneTrustSdkRule import OneTrustSdkRule
+from matchrules.CookieClassRule import CookieClassRule
+
+load_page_script="""
+    function main(splash)
+        assert(splash:go(splash.args.url))
+        assert(splash:wait(3))
+        return {html=splash:html()}
+    end
+"""
 
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = [ 'http://google.com', 'http://facebook.com']
+    start_urls = get_list_of_domains()
+    custom_settings = {
+        'SPLASH_URL': 'http://localhost:8050',
+        'DOWNLOADER_MIDDLEWARES': {
+            'scrapy_splash.SplashCookiesMiddleware': 723,
+            'scrapy_splash.SplashMiddleware': 725,
+            'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
+            'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+        },
+        'SPIDER_MIDDLEWARES': {
+            'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+        },
+        'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter',
+    }
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.data = []
+        self.data = {}
         self.output_callback = kwargs.get('args').get('callback')
+        self.rules = [
+            XpathCookieRule,
+            CookieIdRule, 
+            OneTrustSdkRule,
+            CookieClassRule  
+        ]
+        self.crawled_sucess = 0
+        self.ftc_count = 0
+        self.parsed_domains = set()
+        
 
+    def start_requests(self): 
+        splash_args = {
+           'lua_source': load_page_script,
+           'timeout': 200,
+           'width': 1024,
+        }
+        headers = {'User-Agent': 'my-test-banner-app'}
+        for url in self.start_urls:
+            domain = url.split('.')[0]
+            top_level_domain = url.split('.')[-1]
+            if domain not in self.parsed_domains and top_level_domain in ['com', 'uk']: 
+                self.parsed_domains.add(domain)
+                yield SplashRequest("https://"+url, self.parse, 
+                    endpoint='execute', 
+                    #args={'wait': 1}, 
+                    args=splash_args,
+                    headers=headers
+                )
     def parse(self, response):
-        depth = 0
-
-        if 'depth' in response.meta:
-            depth = response.meta['depth']
-
-        for page in response.css('body'):
-            if depth < self.maxdepth:
-                a_selectors = response.xpath("//a")
-                for selector in a_selectors:
-                    # Extract the link text
-                    text = selector.xpath("text()").extract_first()
-                    # Extract the link href
-                    link = selector.xpath("@href").extract_first()
-                    # Create a new Request object
-                    request = response.follow(link, callback=self.parse)
-                    # Return it thanks to a generator
-                    request.meta['depth'] = depth + 1
-                    if str(link).count("policies"):
-                        yield request
-            self.data.append(page.extract())
-        # if you wanna extract more than whole body
-        # for title in response.css('h2.entry-title'):
-        #     yield {'title': title.css('a ::text').extract_first()}
-
-        # for next_page in response.css('div.prev-post > a'):
-        #     yield response.follow(next_page, self.parse)
+        key = response.url
+        bannerHtml = self.runRules(response)
+        
+        if bannerHtml is not None and len(bannerHtml) > 0:
+            self.crawled_sucess+=1
+            self.data[key] = bannerHtml
+        else:
+            self.ftc_count+=1
+            self.data[key] = "FailedToFindBanner"
+            
+    def runRules(self, response):
+        i = 0
+        res = "" 
+        while i < len(self.rules) and len(res) == 0:
+            rule = self.rules[i]()
+            res = rule.extract(response)
+            i+=1
+        
+        return res
 
 
     def close(self, spider, reason):
+        print(f"Succefully extracted {self.crawled_sucess}")
+        print(f"Failed to extact banner from {self.ftc_count} sites")
         self.output_callback(self.data)
 
 
@@ -48,9 +102,7 @@ class Crawler:
 
     def __init__(self):
         self.output = None
-        self.process = CrawlerProcess({
-            'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
-        })
+        self.process = CrawlerProcess()
 
     def yield_output(self, data):
         self.output = data
