@@ -1,6 +1,9 @@
 import pandas as pd
+import os
 
 # load data from csv file
 def get_list_of_domains():
-    data = pd.read_csv("top500Domains.csv")
+    csv = os.getenv("CSV")
+    print(csv)
+    data = pd.read_csv(csv)
     return data['Root Domain'].to_numpy()

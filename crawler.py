@@ -109,4 +109,4 @@ class Crawler:
 
     def crawl(self, cls):
         self.process.crawl(cls, args={'callback': self.yield_output})
-        self.process.start()    
+        self.process.start()
