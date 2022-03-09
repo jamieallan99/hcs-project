@@ -4,28 +4,43 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
+class SeleniumScreenshotter:
 
-def take_screenshot(url: str) -> None:
-    options = Options()
-    options.headless = True
-    options.add_argument("--incognito")
+    def __init__(self):
+        options = Options()
+        # options.headless = True
+        options.add_argument("--incognito")
+        self.driver = webdriver.Chrome("./chromedriver.exe", options=options)
+        self.driver.set_window_position(0, 0)
+        self.driver.set_window_size(1024, 1024)
+
+    def take_screenshot(self, url: str) -> None:
+        self.driver.get(url)
+        domain = url.strip('htps:/w.').split('.')[0]
+
+        try:
+            element = WebDriverWait(self.driver, 3).until(
+                EC.presence_of_element_located((By.XPATH, "//*[contains(., 'cookie')]"))
+            )
+        except Exception:
+            print(f"Couldn't find banner for {url}")
+            return
+
+        try:
+            self.driver.save_screenshot(f"images/{domain}_page.png")
+            #element.screenshot(f"{domain}_banner.png")
+        except Exception:
+            print(f"Couldn't save for {url}")
     
-    driver = webdriver.Chrome("./chromedriver.exe")
-
-    driver.get(url)
-    domain = url.split('.')[1]
-    try:
-        element = WebDriverWait(driver, 15).until(
-            EC.presence_of_element_located((By.XPATH, "//*[contains(., 'cookie')]"))
-        )
-    finally:
-        pass
-
-    try:
-        driver.save_screenshot(f"{domain}_page.png")
-        # element.screenshot(f"{domain}_banner.png")
-    finally:
-        driver.quit()
+    def quit(self):
+        self.driver.quit()
 
 
-take_screenshot('https://google.com')
+urls = ['https://google.com', 'https://blogger.com', 'https://facebook.com']
+
+s = SeleniumScreenshotter()
+
+for url in urls:
+    s.take_screenshot(url)
+
+s.quit()
