@@ -57,6 +57,7 @@ class PolicyCrawler(scrapy.Spider):
             'png': 1,
             'timeout': 200,
             'width': 1024,
+            'wait': 10,
         }
         headers = {'User-Agent': 'my-test-banner-app'}
         for url in self.start_urls:
@@ -66,7 +67,6 @@ class PolicyCrawler(scrapy.Spider):
                 self.parsed_domains.add(domain)
                 yield SplashRequest("https://"+url, self.parse, 
                     endpoint='render.json', 
-                    #args={'wait': 1}, 
                     args=splash_args,
                     headers=headers
                 )
