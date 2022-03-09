@@ -50,13 +50,13 @@ class PolicyCrawler(scrapy.Spider):
         self.crawled_sucess = 0
         self.ftc_count = 0
         self.parsed_domains = set()
-        
 
     def start_requests(self): 
         splash_args = {
-           'lua_source': load_page_script,
-           'timeout': 200,
-           'width': 1024,
+            'html': 1,
+            'png': 1,
+            'timeout': 200,
+            'width': 1024,
         }
         headers = {'User-Agent': 'my-test-banner-app'}
         for url in self.start_urls:
@@ -65,11 +65,12 @@ class PolicyCrawler(scrapy.Spider):
             if domain not in self.parsed_domains and top_level_domain in ['com', 'uk', 'edu']:
                 self.parsed_domains.add(domain)
                 yield SplashRequest("https://"+url, self.parse, 
-                    endpoint='execute', 
+                    endpoint='render.json', 
                     #args={'wait': 1}, 
                     args=splash_args,
                     headers=headers
                 )
+
     def parse(self, response):
         key = response.url
         bannerHtml = self.runRules(response)
