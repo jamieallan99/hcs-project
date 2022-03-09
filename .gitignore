@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 output/*
 temp_file.txt
+*images/
+.vscode/
 
 # C extensions
 *.so

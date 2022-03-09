@@ -1,3 +1,4 @@
+import base64
 from email import header
 from multiprocessing.connection import wait
 from wsgiref import headers
@@ -14,15 +15,15 @@ from matchrules.CookieClassRule import CookieClassRule
 load_page_script="""
     function main(splash)
         assert(splash:go(splash.args.url))
-        assert(splash:wait(3))
-        return {html=splash:html()}
+        assert(splash:wait(10))
+        return {html=splash:html(), png=splash:png()}
     end
 """
 
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = get_list_of_domains()
+    start_urls = get_list_of_domains()[:10]
     custom_settings = {
         'SPLASH_URL': 'http://localhost:8050',
         'DOWNLOADER_MIDDLEWARES': {
@@ -70,17 +71,21 @@ class PolicyCrawler(scrapy.Spider):
                     args=splash_args,
                     headers=headers
                 )
+
     def parse(self, response):
         key = response.url
         bannerHtml = self.runRules(response)
-        
         if bannerHtml is not None and len(bannerHtml) > 0:
             self.crawled_sucess+=1
             self.data[key] = bannerHtml
         else:
             self.ftc_count+=1
             self.data[key] = "FailedToFindBanner"
-            
+        png = base64.b64decode(response.data['png'])
+        filename = f'images/{response.url.strip("htps:/w.").split(".")[0]}.png'
+        with open(filename, 'wb') as f:
+            f.write(png)
+
     def runRules(self, response):
         i = 0
         res = "" 
