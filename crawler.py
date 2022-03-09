@@ -1,3 +1,4 @@
+import base64
 from email import header
 from multiprocessing.connection import wait
 from wsgiref import headers
@@ -22,7 +23,7 @@ load_page_script="""
 class PolicyCrawler(scrapy.Spider):
     name = "policies"
     maxdepth = 2
-    start_urls = get_list_of_domains()
+    start_urls = get_list_of_domains()[:10]
     custom_settings = {
         'SPLASH_URL': 'http://localhost:8050',
         'DOWNLOADER_MIDDLEWARES': {
@@ -81,6 +82,10 @@ class PolicyCrawler(scrapy.Spider):
         else:
             self.ftc_count+=1
             self.data[key] = "FailedToFindBanner"
+        png = base64.b64decode(response.data['png'])
+        filename = f'images/{response.url.strip("htps:/w.").split(".")[0]}.png'
+        with open(filename, 'wb') as f:
+            f.write(png)
             
     def runRules(self, response):
         i = 0
