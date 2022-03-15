@@ -1,6 +1,10 @@
 from matchrules import MatchRuleInterface
 import scrapy
 
+"""
+    a rule which extracts parts of a webpage code based on the key-word "cookie"
+    this key-word is search anywhere in the span/p/div tags of HTML code
+"""
 class XpathCookieRule(MatchRuleInterface.MatchRuleInterface):
     def extract(self, response: scrapy.http.Response):
         key = response.url
