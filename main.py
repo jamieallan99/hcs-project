@@ -1,6 +1,11 @@
 from crawler import PolicyCrawler, Crawler
 from html_parsing import strip_tags
 
+"""
+    initialize the crawler and run it
+    return: save the output from the crawler into a temp_file
+"""
+
 crawler = Crawler()
 crawler.crawl(PolicyCrawler)
 

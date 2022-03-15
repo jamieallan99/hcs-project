@@ -1,5 +1,11 @@
 from bs4 import BeautifulSoup
 
+
+"""
+    function to remove tags from a html code
+    return: the stripped text (innerHTML)
+"""
+
 def strip_tags(html):
     soup = BeautifulSoup(html, "html.parser") # create a new bs4 object from the html data loaded
     for script in soup(["script", "style"]): # remove all javascript and stylesheet code
