@@ -35,3 +35,15 @@ class SeleniumScreenshotter:
 
     def quit(self):
         self.driver.quit()
+
+
+# This will executed if the script is ran rather than imported
+if __name__ == '__main__':
+    urls = []  # Add some urls here 
+
+    s = SeleniumScreenshotter()
+
+    for url in urls:
+        s.take_screenshot(url)
+
+    s.quit()
