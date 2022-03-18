@@ -1,0 +1,674 @@
+{
+  "https://bangor.ac.uk": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "15%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://aston.ac.uk": {
+    "colour": "white",
+    "location": "right",
+    "size": "30%",
+    "type": "blocked rejectable",
+    "notes": ""
+  },
+  "https://bcu.ac.uk": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://abdn.ac.uk": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://abertay.ac.uk": {
+    "colour": "dark blue",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://bolton.ac.uk": {
+    "colour": "white",
+    "location": "centre",
+    "size": "30%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://reddit.com": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://cam.ac.uk": {
+    "colour": "dark grey",
+    "location": "bottom",
+    "size": "50%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://bournemouth.ac.uk": {
+    "colour": "white",
+    "location": "centre",
+    "size": "15%",
+    "type": "blocked",
+    "notes": ""
+  },
+  "https://brunel.ac.uk": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://birmingham.ac.uk": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "5%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://chester.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://uel.ac.uk": {
+    "colour": "dark grey",
+    "location": "bottom",
+    "size": "5%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://essex.ac.uk": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "5%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://hud.ac.uk": {
+    "colour": "grey",
+    "location": "top",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://gold.ac.uk": {
+    "colour": "grey",
+    "location": "centre",
+    "size": "15%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://gre.ac.uk": {
+    "colour": "lilac",
+    "location": "top",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://ucl.ac.uk": {
+    "colour": "na",
+    "location": "bottom",
+    "size": "na",
+    "type": "not there",
+    "notes": "Doesn't have a banner just a link to their policy in the footer"
+  },
+  "https://lancs.ac.uk": {
+    "colour": "grey",
+    "location": "top",
+    "size": "20%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://kingston.ac.uk": {
+    "colour": "white",
+    "location": "top",
+    "size": "2.5%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://dmu.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "5%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://le.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://leeds.ac.uk": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "30%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://lincoln.ac.uk": {
+    "colour": "blue",
+    "location": "top",
+    "size": "8%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://ljmu.ac.uk": {
+    "colour": "blue",
+    "location": "top",
+    "size": "15%",
+    "type": "explicit adjustable",
+    "notes": "Transparent sits on top of page"
+  },
+  "https://leedsbeckett.ac.uk": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "5%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://lsbu.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://lse.ac.uk": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://lshtm.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://mmu.ac.uk": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "20%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://lut.ac.uk": {
+    "colour": "purple",
+    "location": "right",
+    "size": "50%",
+    "type": "blocked rejectable",
+    "notes": ""
+  },
+  "https://leedstrinity.ac.uk": {
+    "colour": "light blue",
+    "location": "left",
+    "size": "50%",
+    "type": "blocked rejectable",
+    "notes": ""
+  },
+  "https://northumbria.ac.uk": {
+    "colour": "white",
+    "location": "top",
+    "size": "2.5%",
+    "type": "explicit",
+    "notes": "Partially covered"
+  },
+  "https://ntu.ac.uk": {
+    "colour": "black",
+    "location": "top",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://ox.ac.uk": {
+    "colour": "dark blue",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://qmu.ac.uk": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://rave.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://bruford.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://rgu.ac.uk": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "20%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://rca.ac.uk": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://qub.ac.uk": {
+    "colour": "red",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://nottingham.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "15%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://soas.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://sunderland.ac.uk": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://staffs.ac.uk": {
+    "colour": "white",
+    "location": "centre",
+    "size": "15%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://tees.ac.uk": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://writtle.ac.uk": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://winchester.ac.uk": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://acu.edu": {
+    "colour": "purple",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://aic.edu": {
+    "colour": "white",
+    "location": "centre",
+    "size": "15%",
+    "type": "blocked rejectable",
+    "notes": "Appears in the url list twice"
+  },
+  "https://babson.edu": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "25%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://averett.edu": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://apu.edu": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "2%",
+    "type": "implicit",
+    "notes": "In the footer of the page, not really visible"
+  },
+  "https://auburn.edu": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "15%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://antiochla.edu": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://antiochne.edu": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://american.edu": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://beloit.edu": {
+    "colour": "orange",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://ceu.edu": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://carroll.edu": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": "Has a popup cookie banner for an advertising company"
+  },
+  "https://strose.edu": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://ccu.edu": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "15%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://wm.edu": {
+    "colour": "green",
+    "location": "bottom",
+    "size": "30%",
+    "type": "implicit",
+    "notes": "picture background"
+  },
+  "https://creighton.edu": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://erau.edu": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "8%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://emu.edu": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "25%",
+    "type": "implicit",
+    "notes": "Picture background"
+  },
+  "https://fontbonne.edu": {
+    "colour": "dark grey",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://gatech.edu": {
+    "colour": "bright blue",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://fandm.edu": {
+    "colour": "grey",
+    "location": "bottom",
+    "size": "5%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://fuller.edu": {
+    "colour": "na",
+    "location": "top",
+    "size": "na",
+    "type": "na",
+    "notes": "Only has cookie banner from nextroll advertising"
+  },
+  "https://fgcu.edu": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://ferris.edu": {
+    "colour": "white",
+    "location": "centre",
+    "size": "15%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://emerson.edu": {
+    "colour": "purple",
+    "location": "bottom",
+    "size": "5%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://harding.edu": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "15%",
+    "type": "implicit",
+    "notes": "Transparent, can make the text hard to read"
+  },
+  "https://graceland.edu": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "8%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://georgian.edu": {
+    "colour": "yellow",
+    "location": "bottom",
+    "size": "10%",
+    "type": "implicit",
+    "notes": "Hard to read small text on yellow background"
+  },
+  "https://hamilton.edu": {
+    "colour": "light grey",
+    "location": "bottom",
+    "size": "5%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://jfku.edu": {
+    "colour": "light grey",
+    "location": "bottom",
+    "size": "15%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://iona.edu": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://lsu.edu": {
+    "colour": "yellow",
+    "location": "bottom",
+    "size": "15%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://lycoming.edu": {
+    "colour": "black",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit",
+    "notes": ""
+  },
+  "https://linkedin.com": {
+    "colour": "grey",
+    "location": "top",
+    "size": "20%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://google.com": {
+    "colour": "white",
+    "location": "centre",
+    "size": "90%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://microsoft.com": {
+    "colour": "light grey",
+    "location": "top",
+    "size": "15%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://facebook.com": {
+    "colour": "white",
+    "location": "centre",
+    "size": "70%",
+    "type": "blocked rejectable",
+    "notes": ""
+  },
+  "https://live.com": {
+    "colour": "na",
+    "location": "top",
+    "size": "na",
+    "type": "na",
+    "notes": "Only has a link to cookie policy in footer"
+  },
+  "https://bbc.com": {
+    "colour": "dark grey",
+    "location": "top",
+    "size": "10%",
+    "type": "explicit adjustable",
+    "notes": ""
+  },
+  "https://paypal.com": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "10%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://yahoo.com": {
+    "colour": "white",
+    "location": "centre",
+    "size": "50%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://tools.google.com": {
+    "colour": "white",
+    "location": "top",
+    "size": "8%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://weebly.com": {
+    "colour": "white",
+    "location": "centre",
+    "size": "15%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://android.com": {
+    "colour": "white",
+    "location": "bottom",
+    "size": "15%",
+    "type": "implicit",
+    "notes": ""
+  },
+  "https://gov.uk": {
+    "colour": "white",
+    "location": "top",
+    "size": "30%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://office.com": {
+    "colour": "light grey",
+    "location": "top",
+    "size": "15%",
+    "type": "explicit rejectable",
+    "notes": ""
+  },
+  "https://mediafire.com": {
+    "colour": "white",
+    "location": "centre",
+    "size": "40%",
+    "type": "blocked adjustable",
+    "notes": ""
+  },
+  "https://nature.com": {
+    "colour": "blue",
+    "location": "bottom",
+    "size": "40%",
+    "type": "explicit adjustable",
+    "notes": ""
+  }
+}
