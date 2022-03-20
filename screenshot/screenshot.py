@@ -10,7 +10,7 @@ class SeleniumScreenshotter:
         options = Options()
         options.headless = headless  # Can be turned on if just taking the screenshots
         options.add_argument("--incognito")  # To ensure cookies aren't saved
-        self.driver = webdriver.Chrome("./chromedriver.exe", options=options)
+        self.driver = webdriver.Chrome("./screenshot/chromedriver.exe", options=options)
         self.driver.set_window_position(0, 0)
         self.driver.set_window_size(1024, 1024)
 

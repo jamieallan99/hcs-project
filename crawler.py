@@ -3,6 +3,7 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy_splash import SplashRequest
 
+from screenshot.screenshot import SeleniumScreenshotter
 from data import get_list_of_domains
 from matchrules.XpathCookieRule import XpathCookieRule
 from matchrules.CookieIdRule import CookieIdRule
@@ -45,6 +46,7 @@ class PolicyCrawler(scrapy.Spider):
         },
         'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter',
     }
+    name = "PolicyCrawler"
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -59,6 +61,7 @@ class PolicyCrawler(scrapy.Spider):
         self.crawled_sucess = 0
         self.ftc_count = 0
         self.parsed_domains = set()
+        self.screenshotter = SeleniumScreenshotter(headless=True)
         
     """
         function which returns an iterable with the first Requests to crawl for this spider
@@ -76,6 +79,8 @@ class PolicyCrawler(scrapy.Spider):
         headers = {'User-Agent': 'my-test-banner-app'}
 
         for url in self.start_urls:
+            print("\n\n\!!!!!!\n"+url+"\n!!!!!\n\n")
+            self.screenshotter.take_screenshot("https://" + url)
             domain = url.split('.')[0]
             top_level_domain = url.split('.')[-1]
 
@@ -87,6 +92,7 @@ class PolicyCrawler(scrapy.Spider):
                     args=splash_args,
                     headers=headers
                 )
+        self.screenshotter.quit()
 
     """
         the default callback used by Scrapy to process downloaded responses, 
