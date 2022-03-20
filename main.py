@@ -2,7 +2,6 @@ from argparse import ArgumentParser
 import os
 
 parser = ArgumentParser()
-parser.add_argument("-urls", nargs="+", help="Provide a list of urls to crawl (no commas needed)", required=False)
 parser.add_argument("-csv", help="Provide a csv file with the urls to be crawled", required=False)
 parser.add_argument("-f", help="Specify the name of the file to store the output", required=False)
 args, leftovers = parser.parse_known_args()
@@ -13,7 +12,6 @@ else:
     os.environ["CSV"] = "top500Domains.csv"
 
 csv = os.getenv("CSV")
-
 
 # these import statements must be here (instead of at the top of the file) because
 # the global variable CSV must be set first
