@@ -154,3 +154,4 @@ cython_debug/
 
 # Other files
 *.png
+*.vscode/
