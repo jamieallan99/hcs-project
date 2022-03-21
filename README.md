@@ -38,3 +38,16 @@ python main.py -csv myData.csv -f myOutputFile.txt
 python main.py -csv Documents/myData.csv -f Documents/myOutputFile.txt
 ```
 
+**How to run Selenium screenshot code:**
+
+- Install Selenium
+
+```
+pip install selenium
+```
+
+- Run sscreenshot.py
+
+```
+python screenshot/screenshot.py
+```
