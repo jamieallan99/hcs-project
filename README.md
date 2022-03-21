@@ -3,8 +3,10 @@ We will scrape cookie banners to analyse them.
 
 Further, scope could be adding the ability to compare a specific policy and scrape the cookies as well.
 
+**Tested on Linux and Windows** 
 
-**How to run:**
+
+**How to run Scrapy and Splash crawler:**
 - Install requirements
 
 ```
@@ -37,4 +39,24 @@ Examples can be seen below:
 python main.py -csv myData.csv -f myOutputFile.txt
 python main.py -csv Documents/myData.csv -f Documents/myOutputFile.txt
 ```
+
+**How to run Selenium screenshot code:**
+
+- Install Selenium
+
+```
+pip install selenium
+```
+
+- Run sscreenshot.py
+
+```
+python screenshot/screenshot.py
+```
+
+**Common issues:**
+- selenium fails because chrome was not found - make sure you have chrome 99 installed
+- the chromedriver isn't executable - run sudo chmod +x /screenshot/chromedriver
+
+
 
