@@ -4,7 +4,7 @@ We will scrape cookie banners to analyse them.
 Further, scope could be adding the ability to compare a specific policy and scrape the cookies as well.
 
 
-**How to run:**
+**How to run Scrapy and Splash crawler:**
 - Install requirements
 
 ```
@@ -38,3 +38,16 @@ python main.py -csv myData.csv -f myOutputFile.txt
 python main.py -csv Documents/myData.csv -f Documents/myOutputFile.txt
 ```
 
+**How to run Selenium screenshot code:**
+
+- Install Selenium
+
+```
+pip install selenium
+```
+
+- Run sscreenshot.py
+
+```
+python screenshot/screenshot.py
+```
