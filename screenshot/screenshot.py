@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
+import platform
 
 class SeleniumScreenshotter:
 
@@ -10,7 +11,10 @@ class SeleniumScreenshotter:
         options = Options()
         options.headless = headless  # Can be turned on if just taking the screenshots
         options.add_argument("--incognito")  # To ensure cookies aren't saved
-        self.driver = webdriver.Chrome("./screenshot/chromedriver.exe", options=options)
+        if platform.system() == 'Linux':
+            self.driver = webdriver.Chrome("./screenshot/chromedriver", options=options)
+        else: 
+            self.driver = webdriver.Chrome("./screenshot/chromedriver.exe", options=options)
         self.driver.set_window_position(0, 0)
         self.driver.set_window_size(1024, 1024)
 
