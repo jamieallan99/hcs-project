@@ -4,7 +4,7 @@ We will scrape cookie banners to analyse them.
 Further, scope could be adding the ability to compare a specific policy and scrape the cookies as well.
 
 
-**How to run:**
+**How to run Scrapy and Splash crawler:**
 - Install requirements
 
 ```
