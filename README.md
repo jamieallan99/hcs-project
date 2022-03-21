@@ -5,7 +5,6 @@ Further, scope could be adding the ability to compare a specific policy and scra
 
 **Tested on Linux and Windows** 
 
-
 **How to run Scrapy and Splash crawler:**
 - Install requirements
 
@@ -57,6 +56,5 @@ python screenshot/screenshot.py
 **Common issues:**
 - selenium fails because chrome was not found - make sure you have chrome 99 installed
 - the chromedriver isn't executable - run sudo chmod +x /screenshot/chromedriver
-
 
 
